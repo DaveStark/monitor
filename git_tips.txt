@@ -1,0 +1,17 @@
+# add files that aren't specified in .gitignore file (stage)
+  > git add .
+
+# revert added files with git add command(unstage)
+  > git reset
+
+# see added files and git status
+  > git status
+
+# initialize git repository
+  > git init
+
+# do a commit
+  > git commit -m "commit message"
+
+# pushing changes
+  > git push origin master
