@@ -117,28 +117,28 @@ DWORD WINAPI invertMouse(LPVOID lpParameter) {
 
 		//If the cursor is out of bounds
 		if (x == minx) {
-			x = x + 2;
+			x = x + 4;
 		}
 		if (x2 == minx) {
-			x2 = x2 + 2;
+			x2 = x2 + 4;
 		}
 		if (y2 == miny) {
-			y2 = y2 + 2;
+			y2 = y2 + 4;
 		}
 		if (y == miny) {
-			y = y + 2;
+			y = y + 4;
 		}
-		if (x == mx) {
-			x = x - 2;
+		if (x >= mx) {
+			x = x - 4;
 		}
-		if (x2 == mx) {
-			x2 = x2 - 2;
+		if (x2 >= mx) {
+			x2 = x2 - 4;
 		}
-		if (y2 == my) {
-			y2 = y2 - 2;
+		if (y2 >= my) {
+			y2 = y2 - 4;
 		}
-		if (y == my) {
-			y = y - 2;
+		if (y >= my) {
+			y = y - 4;
 		}
 
 		SetCursorPos(x2, y2);
